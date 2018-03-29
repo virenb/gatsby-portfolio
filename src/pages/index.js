@@ -1,24 +1,15 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
-import TypeOut from "react-typeout";
 
 import { siteMetadata } from "../../gatsby-config";
-import ProfilePic from "../assets/avatar.png";
+import ProfilePic from "../assets/myAvatar.png";
 
 import About from "../components/About";
 import Projects from "../components/Project";
-import BlogLinks from "../components/BlogLinks";
 import Skills from "../components/Skills";
 import Before from "../components/Before";
 import Favorite from "../components/Favorite";
 import Footer from "../components/Footer";
-
-const words = [
-  "Let's build something",
-  "Make a Side Project",
-  "Make an App",
-  "Write a tutorial"
-];
 
 class IndexPage extends Component {
   render() {
@@ -38,8 +29,7 @@ class IndexPage extends Component {
               style={{
                 width: "300px",
                 borderStyle: "solid",
-                borderColor: "#dfdbe5",
-                borderRadius: "50%"
+                borderColor: "#dfdbe5"
               }}
               src={ProfilePic}
               alt="avatar"
@@ -47,7 +37,7 @@ class IndexPage extends Component {
             <div
               style={{ fontSize: "32px", height: "50px", maxWidth: "350px" }}
             >
-              <TypeOut words={words} className="react-typeout-caret" />
+            <p>Hi</p>
             </div>
           </div>
           <div style={{ flexDirection: "column" }}>
@@ -57,8 +47,6 @@ class IndexPage extends Component {
             <About />
             <br />
             <Projects projectEdges={projectEdges} />
-            <br />
-            <BlogLinks />
             <br />
             <Skills />
             <br />

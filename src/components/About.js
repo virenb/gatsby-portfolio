@@ -4,8 +4,8 @@ const About = () => (
   <div>
     <h2>👉 Currently</h2>
     <ul style={{ listStyle: "none" }}>
-      <li>- Living on Pale Blue Dot 📍 🌏</li>
-      <li>- Working Hi 💻</li>
+      <li>- New Jersey/New York 📍</li>
+      <li>- For Hire 👋</li>
     </ul>
   </div>
 );

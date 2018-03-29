@@ -2,19 +2,19 @@ import React from "react";
 
 const Footer = () => (
   <div style={{ textAlign: "center" }}>
-    <h1>🙏 Stay in Touch</h1>
+    <h1>📬 Contact</h1>
     <p>
-      <a href="https://twitter.com/amanhimself">Twitter</a>,&nbsp;
-      <a href="mailto:abc@xyz.com">Email</a>
+      <a href="mailto:virenb@gmail.com" target="_blank">Email</a>,&nbsp;
+      <a href="https://twitter.com/virengb" target="_blank">Twitter</a>
     </p>
     <small>
-      Developed in ⚛️ React by{" "}
-      <a href="http://www.amanhimself.me">Aman Mittal</a>
+      Made with {" "}
+      <a href="https://www.gatsbyjs.org" target="_blank">GatsbyJS</a>
     </small>
     <br />
     <small>
       Background Pattern provided by{" "}
-      <a href="http://www.heropatterns.com/">Hero Patterns</a>
+      <a href="http://www.heropatterns.com/" target="_blank">Hero Patterns</a>
     </small>
   </div>
 );
