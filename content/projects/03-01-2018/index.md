@@ -1,5 +1,5 @@
 ---
-title: Project 1
+title: A Suh
 date: 03-01-2018
 path: /projects/project-1 
 ProductHuntLink: https://producthunt.com

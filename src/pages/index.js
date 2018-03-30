@@ -29,18 +29,15 @@ class IndexPage extends Component {
               style={{
                 width: "300px",
                 borderStyle: "solid",
-                borderColor: "#dfdbe5"
+                borderColor: "#dfdbe5",
+                borderRadius: "50%"
               }}
               src={ProfilePic}
               alt="avatar"
             />
-            <div
-              style={{ fontSize: "32px", height: "50px", maxWidth: "350px" }}
-            >
-            <p>Hi</p>
-            </div>
+
           </div>
-          <div style={{ flexDirection: "column" }}>
+          <div style={{ flexDirection: "column", marginLeft: "1.45rem", marginRight: "1.45rem" }}>
             <h1>{siteMetadata.author}</h1>
             <h3>{siteMetadata.description}</h3>
             <br />
@@ -74,9 +71,7 @@ export const rootQuery = graphql`
             title
             date
             path
-            ProductHuntLink
-            BlogPost
-            Revenue
+            desc
           }
         }
       }

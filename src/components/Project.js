@@ -8,10 +8,9 @@ class Projects extends Component {
         title: projectEdge.node.frontmatter.title,
         date: projectEdge.node.frontmatter.date,
         excerpt: projectEdge.node.excerpt,
-        ProductHuntLink: projectEdge.node.frontmatter.ProductHuntLink,
-        BlogPost: projectEdge.node.frontmatter.BlogPost,
-        Revenue: projectEdge.node.frontmatter.Revenue,
-        ProductHuntVotes: projectEdge.node.frontmatter.ProductHuntVotes
+        ProjectLink: projectEdge.node.frontmatter.ProjectLink,
+        RepositoryLink: projectEdge.node.frontmatter.RepositoryLink,
+        desc: projectEdge.node.frontmatter.desc
       });
     });
     return Data;
@@ -27,14 +26,10 @@ class Projects extends Component {
           <div key={project.title} style={{ padding: ".5rem" }}>
             <p>{project.title}</p>
             <ul style={{ listStyle: "none" }}>
-              <li>- {project.excerpt}</li>
-              <li>
-                - 😸 On <a href={project.ProductHuntLink}>Product Hunt</a>
-              </li>
-              <li>
-                - 📰 <a href={project.BlogPost}>Blog Post</a>
-              </li>
-              <li>- 💰 Revenue: {project.Revenue}</li>
+              <li>- <a href={project.ProjectLink}>Project Here</a></li>
+              <li>- <a href={project.RepositoryLink}>Repo Here</a></li>              
+              <li>- {project.desc}</li>            
+              <li>- {project.excerpt}</li>              
             </ul>
           </div>
         ))}
