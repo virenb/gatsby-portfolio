@@ -68,9 +68,10 @@ export const rootQuery = graphql`
         node {
           excerpt
           frontmatter {
-            title
-            date
+            title        
             path
+            ProjectLink
+            RepositoryLink                
             desc
           }
         }

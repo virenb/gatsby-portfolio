@@ -6,11 +6,10 @@ class Projects extends Component {
     this.props.projectEdges.forEach(projectEdge => {
       Data.push({
         title: projectEdge.node.frontmatter.title,
-        date: projectEdge.node.frontmatter.date,
-        excerpt: projectEdge.node.excerpt,
         ProjectLink: projectEdge.node.frontmatter.ProjectLink,
         RepositoryLink: projectEdge.node.frontmatter.RepositoryLink,
-        desc: projectEdge.node.frontmatter.desc
+        desc: projectEdge.node.frontmatter.desc,
+        excerpt: projectEdge.node.excerpt,
       });
     });
     return Data;
@@ -24,12 +23,11 @@ class Projects extends Component {
         <h2>🚀 Projects/Apps</h2>
         {Data.map(project => (
           <div key={project.title} style={{ padding: ".5rem" }}>
-            <p>{project.title}</p>
+            <p><a href={project.ProjectLink} style={{ textDecoration: "none" }}>{project.title}</a></p>
             <ul style={{ listStyle: "none" }}>
-              <li>- <a href={project.ProjectLink}>Project Here</a></li>
-              <li>- <a href={project.RepositoryLink}>Repo Here</a></li>              
-              <li>- {project.desc}</li>            
-              <li>- {project.excerpt}</li>              
+            <li>- <a href={project.RepositoryLink}>GitHub Repository</a></li>
+            <li>- {project.desc}</li>      
+            <li>- {project.excerpt}</li>                 
             </ul>
           </div>
         ))}
