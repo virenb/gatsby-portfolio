@@ -11,11 +11,6 @@ const Footer = () => (
       Made with {" "}
       <a href="https://www.gatsbyjs.org" target="_blank">GatsbyJS</a>
     </small>
-    <br />
-    <small>
-      Background Pattern provided by{" "}
-      <a href="http://www.heropatterns.com/" target="_blank">Hero Patterns</a>
-    </small>
   </div>
 );
 

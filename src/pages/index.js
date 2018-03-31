@@ -15,7 +15,7 @@ class IndexPage extends Component {
   render() {
     const projectEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <div style={{ background: "#9c92ac", paddingTop: "1rem" }}>
+      <div style={{ background: "#CEE0E5", paddingTop: "1rem" }}>
         <div
           style={{
             display: "flex",
@@ -63,7 +63,7 @@ class IndexPage extends Component {
 
 export const rootQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark {
       edges {
         node {
           excerpt
