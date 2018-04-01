@@ -1,3 +1,1 @@
-# Portfolio Website w. Gatsby
-
-🚀 Coming Soon
+Repository for portfolio site made with Gatsby JS.
